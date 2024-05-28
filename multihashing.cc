@@ -675,7 +675,7 @@ DECLARE_FUNC(yespower_b2b) {
 
 DECLARE_FUNC(primesr) {
     DECLARE_SCOPE;
-  if (info.Length() < 1)
+  if (args.Length() < 1)
         return THROW_ERROR_EXCEPTION("You must provide one argument.");
 
     Local<Object> target = info[0]->ToObject();
