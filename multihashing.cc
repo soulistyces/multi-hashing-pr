@@ -243,6 +243,7 @@ DECLARE_NO_INPUT_LENGTH_CALLBACK(yespower_0_5_R24, yespower_0_5_R24_hash, 32);
 DECLARE_NO_INPUT_LENGTH_CALLBACK(yespower_0_5_R32, yespower_0_5_R32_hash, 32);
 DECLARE_NO_INPUT_LENGTH_CALLBACK(yespower_ltncg, yespower_ltncg_hash, 32);
 DECLARE_NO_INPUT_LENGTH_CALLBACK(cpupower, cpupower_hash, 32);
+DECLARE_NO_INPUT_LENGTH_CALLBACK(primesr, primesr_hash, 32);
 //DECLARE_NO_INPUT_LENGTH_CALLBACK(yespower_b2b, yespower_b2b_hash, 32);
 
 DECLARE_FUNC(scrypt) {
@@ -749,7 +750,7 @@ DECLARE_INIT(init) {
     NODE_SET_METHOD(exports, "yespower_ltncg", yespower_ltncg);
     NODE_SET_METHOD(exports, "yespower_b2b", yespower_b2b);
     NODE_SET_METHOD(exports, "cpupower", cpupower);
-	NODE_SET_METHOD(exports, "primesr", primesr);
+    NODE_SET_METHOD(exports, "primesr", primesr);
 }
 
 NODE_MODULE(multihashing, init)
